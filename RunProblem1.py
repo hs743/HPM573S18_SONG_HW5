@@ -21,10 +21,10 @@ myCohort = Model.Cohort(id = 2, cohort_number = cohortNumber, head_prob = headPr
 myCohort.simulate(timeSteps)
 
 
+print("The probablity of flipping a head is 0.5, we flip 20 times as one game and we undergo the game 1000 times")
+print('Average expected reward (dollors):', myCohort.get_ave_value())
 
-print ('Average expected reward (dollors):', myCohort.get_ave_value())
-
-print ('The maximum reward is:', max(myCohort.get_exp_value()), "dollars", "and the minimum reward is:", min(myCohort.get_exp_value()), 'dollars.')
+print('The maximum reward is:', max(myCohort.get_exp_value()), "dollars", "and the minimum reward is:", min(myCohort.get_exp_value()), 'dollars.')
 
 
 
